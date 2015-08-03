@@ -90,6 +90,12 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Bubble2" translatesAutoresizingMaskIntoConstraints="NO" id="S59-Bo-Nzf">
                                 <rect key="frame" x="0.0" y="401" width="64" height="97"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AnimationHub" translatesAutoresizingMaskIntoConstraints="NO" id="fkn-aP-TUV">
+                                <rect key="frame" x="60" y="141" width="254" height="30"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="point" translatesAutoresizingMaskIntoConstraints="NO" id="H9w-dZ-XZo">
+                                <rect key="frame" x="110" y="131" width="6" height="6"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -108,11 +114,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AnimationHub" width="254" height="30"/>
         <image name="Bubble1" width="154" height="154"/>
         <image name="Bubble2" width="64" height="97"/>
         <image name="Bubble3" width="97" height="97"/>
         <image name="Bubble4" width="70" height="70"/>
         <image name="Bubble5" width="113" height="113"/>
         <image name="background" width="375" height="667"/>
+        <image name="point" width="6" height="6"/>
     </resources>
 </document>
