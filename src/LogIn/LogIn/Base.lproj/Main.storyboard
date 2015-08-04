@@ -68,6 +68,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background" id="S0H-uj-ulx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubble1" id="1kA-jL-UFQ">
                                 <rect key="frame" x="11" y="183" width="154" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,30 +100,6 @@
                                 <rect key="frame" x="106" y="131" width="13" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="Text Field" id="Qw2-MD-LBK" userLabel="user_text">
-                                <rect key="frame" x="26" y="206" width="320" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="Text Field" id="e8D-mR-UDW" userLabel="key_text">
-                                <rect key="frame" x="26" y="260" width="320" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="user" id="zY4-au-W7a">
-                                <rect key="frame" x="40" y="212" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="key" id="tUU-U9-mFu">
-                                <rect key="frame" x="38" y="266" width="23" height="22"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background" id="S0H-uj-ulx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -136,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBP-hz-tRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313.5" y="279.5"/>
+            <point key="canvasLocation" x="313.86666666666667" y="279.74000000000001"/>
         </scene>
     </scenes>
     <resources>
@@ -146,11 +126,8 @@
         <image name="Bubble3" width="97" height="97"/>
         <image name="Bubble4" width="70" height="70"/>
         <image name="Bubble5" width="113" height="113"/>
-        <image name="Text Field" width="320" height="34"/>
         <image name="background" width="375" height="667"/>
-        <image name="key" width="23" height="22"/>
         <image name="point" width="6" height="6"/>
-        <image name="user" width="19" height="21"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
