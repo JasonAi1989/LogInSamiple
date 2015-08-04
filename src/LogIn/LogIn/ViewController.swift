@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var Bubble5: UIImageView!
     @IBOutlet weak var dot: UIImageView!
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,15 @@ class ViewController: UIViewController {
         //if those code is not available, please cancle 'autoLayout' in storyboard file
         self.logo.center.x -= self.view.bounds.width
         self.dot.center.x -= self.view.bounds.width/3
+        
+        // adjust place holder text
+        let userPaddingView = UIView(frame: CGRectMake(0, 0, 48, self.username.frame.height))
+        self.username.leftView = userPaddingView
+        self.username.leftViewMode = UITextFieldViewMode.Always
+        
+        let passwordPaddingView = UIView(frame: CGRectMake(0, 0, 48, self.password.frame.height))
+        self.password.leftView = passwordPaddingView
+        self.password.leftViewMode = UITextFieldViewMode.Always
         
     }
 
@@ -61,7 +72,7 @@ class ViewController: UIViewController {
             self.logo.center.x += self.view.bounds.width
             }, completion: nil)
         
-        UIView.animateWithDuration(5, delay: 0.4, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
+        UIView.animateWithDuration(4.5, delay: 0.4, usingSpringWithDamping: 0.1, initialSpringVelocity: 1, options: nil, animations: {
             self.dot.center.x += self.view.bounds.width/3
             }, completion: nil)
  
