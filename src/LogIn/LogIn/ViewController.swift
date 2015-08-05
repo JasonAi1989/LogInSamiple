@@ -35,13 +35,25 @@ class ViewController: UIViewController {
         self.dot.center.x -= self.view.bounds.width/3
         
         // adjust place holder text
-        let userPaddingView = UIView(frame: CGRectMake(0, 0, 48, self.username.frame.height))
+        let userPaddingView = UIView(frame: CGRectMake(0, 0, 40, self.username.frame.height))
         self.username.leftView = userPaddingView
         self.username.leftViewMode = UITextFieldViewMode.Always
         
-        let passwordPaddingView = UIView(frame: CGRectMake(0, 0, 48, self.password.frame.height))
+        let passwordPaddingView = UIView(frame: CGRectMake(0, 0, 40, self.password.frame.height))
         self.password.leftView = passwordPaddingView
         self.password.leftViewMode = UITextFieldViewMode.Always
+        
+        //text field icon
+        var userImageView = UIImageView(image: UIImage(named: "user"))
+        userImageView.frame.origin = CGPoint(x:11, y:6)
+        self.username.addSubview(userImageView)
+        
+        var passwordImageView = UIImageView(image: UIImage(named: "key"))
+        passwordImageView.frame.origin = CGPoint(x:10, y:6)
+        self.password.addSubview(passwordImageView)
+        
+        self.username.center.x -= self.view.bounds.width
+        self.password.center.x -= self.view.bounds.width
         
     }
 
@@ -76,6 +88,13 @@ class ViewController: UIViewController {
             self.dot.center.x += self.view.bounds.width/3
             }, completion: nil)
  
+        UIView.animateWithDuration(0.3, delay: 0.5, options: .CurveEaseOut, animations: {
+            self.username.center.x += self.view.bounds.width
+            }, completion: nil)
+        
+        UIView.animateWithDuration(0.3, delay: 0.6, options: .CurveEaseOut , animations: {
+            self.password.center.x += self.view.bounds.width
+            }, completion: nil)
     }
 
 }
