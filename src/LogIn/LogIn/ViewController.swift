@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,8 @@ class ViewController: UIViewController {
         
         self.username.center.x -= self.view.bounds.width
         self.password.center.x -= self.view.bounds.width
+        
+        self.loginButton.center.x -= self.view.bounds.width
         
     }
 
@@ -94,6 +97,10 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.3, delay: 0.6, options: .CurveEaseOut , animations: {
             self.password.center.x += self.view.bounds.width
+            }, completion: nil)
+        
+        UIView.animateWithDuration(0.3, delay: 0.7, options: .CurveEaseOut , animations: {
+            self.loginButton.center.x += self.view.bounds.width
             }, completion: nil)
     }
 
