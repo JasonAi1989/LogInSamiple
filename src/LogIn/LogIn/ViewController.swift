@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginButton: UIButton!
 
+    
+    //custom
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -104,5 +108,17 @@ class ViewController: UIViewController {
             }, completion: nil)
     }
 
+    @IBAction func loginTapped(sender: AnyObject) {
+        self.loginButton.addSubview(self.spinner)
+        self.spinner.frame.origin = CGPointMake(12, 4)
+        self.spinner.startAnimating()
+        
+        self.loginButton.center.x -= 30
+        UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
+            self.loginButton.center.x += 30
+            }, completion: nil)
+    }
+    
+    
 }
 
