@@ -68,6 +68,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background" id="S0H-uj-ulx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" id="uUD-d8-EAm">
                                 <rect key="frame" x="27" y="270" width="320" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,25 +112,15 @@
                                 <rect key="frame" x="154" y="352" width="154" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mdz-Mt-9yc">
-                                <rect key="frame" x="27" y="344" width="320" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e0N-vP-LYA">
+                                <rect key="frame" x="27" y="348" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Log In" backgroundImage="Button Background">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background" id="S0H-uj-ulx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -138,7 +132,7 @@
                         <outlet property="Bubble4" destination="ps8-SX-7xx" id="iWT-37-WPy"/>
                         <outlet property="Bubble5" destination="lKb-0V-UcL" id="ah0-f5-idt"/>
                         <outlet property="dot" destination="H9w-dZ-XZo" id="3OM-Of-ZWl"/>
-                        <outlet property="loginButton" destination="mdz-Mt-9yc" id="0J2-zM-4kC"/>
+                        <outlet property="loginButton" destination="e0N-vP-LYA" id="wOo-av-5Ui"/>
                         <outlet property="logo" destination="fkn-aP-TUV" id="3Zg-jc-TfE"/>
                         <outlet property="password" destination="uUD-d8-EAm" id="jmZ-bs-rEn"/>
                         <outlet property="username" destination="Fqm-oG-FwF" id="uP3-bD-rIU"/>
@@ -156,7 +150,7 @@
         <image name="Bubble3" width="97" height="97"/>
         <image name="Bubble4" width="70" height="70"/>
         <image name="Bubble5" width="113" height="113"/>
-        <image name="Button Background" width="322" height="47"/>
+        <image name="Button Background" width="13" height="47"/>
         <image name="Text Field" width="320" height="34"/>
         <image name="background" width="375" height="667"/>
         <image name="point" width="6" height="6"/>
