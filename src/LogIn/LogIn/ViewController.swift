@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     
     //custom
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
+    var loginPosition = CGPoint.zeroPoint
+    let errorMessage = UIImageView(image: UIImage(named: "Error"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +62,12 @@ class ViewController: UIViewController {
         self.username.center.x -= self.view.bounds.width
         self.password.center.x -= self.view.bounds.width
         
+        self.loginPosition = self.loginButton.center
         self.loginButton.center.x -= self.view.bounds.width
+        
+        self.view.addSubview(self.errorMessage)
+        self.errorMessage.center = self.loginPosition
+        self.errorMessage.hidden = true
         
     }
 
@@ -109,14 +116,36 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(sender: AnyObject) {
+        //reset the button position
+        UIView.animateWithDuration(0.3, animations: {
+            self.loginButton.center = self.loginPosition
+        })
+        
+        //reset the error message
+        UIView.transitionWithView(self.errorMessage, duration: 0.3, options: .TransitionFlipFromBottom, animations: {
+                self.errorMessage.hidden = true
+        }, completion: nil)
+        
+        
+        //spinner
         self.loginButton.addSubview(self.spinner)
         self.spinner.frame.origin = CGPointMake(12, 4)
         self.spinner.startAnimating()
         
+        //button shake
         self.loginButton.center.x -= 30
         UIView.animateWithDuration(1.5, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: nil, animations: {
             self.loginButton.center.x += 30
-            }, completion: nil)
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, animations: {
+                    self.loginButton.center.y += 80
+                    self.spinner.removeFromSuperview()
+                    }, completion: { _ in
+                        UIView.transitionWithView(self.errorMessage, duration: 0.3, options: .TransitionFlipFromTop | .CurveEaseOut, animations: {
+                                self.errorMessage.hidden = false
+                        }, completion: nil)
+                })
+        })
     }
     
     
