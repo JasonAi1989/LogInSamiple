@@ -16,6 +16,7 @@
 		96142D3B1B6FA0F600F336BC /* LogInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96142D3A1B6FA0F600F336BC /* LogInTests.swift */; };
 		96234D701B7B812C00CDABC7 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */; };
 		96234D721B7B8D3600CDABC7 /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96234D711B7B8D3600CDABC7 /* OpacityViewController.swift */; };
+		96234D741B7B90DC00CDABC7 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96234D731B7B90DC00CDABC7 /* ScaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		96142D3A1B6FA0F600F336BC /* LogInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTests.swift; sourceTree = "<group>"; };
 		96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
 		96234D711B7B8D3600CDABC7 /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
+		96234D731B7B90DC00CDABC7 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				96142D211B6FA0F600F336BC /* AppDelegate.swift */,
+				96234D731B7B90DC00CDABC7 /* ScaleViewController.swift */,
 				96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */,
 				96234D711B7B8D3600CDABC7 /* OpacityViewController.swift */,
 				96142D261B6FA0F600F336BC /* ViewController.swift */,
@@ -224,6 +227,7 @@
 				96234D721B7B8D3600CDABC7 /* OpacityViewController.swift in Sources */,
 				96142D271B6FA0F600F336BC /* ViewController.swift in Sources */,
 				96142D221B6FA0F600F336BC /* AppDelegate.swift in Sources */,
+				96234D741B7B90DC00CDABC7 /* ScaleViewController.swift in Sources */,
 				96142D251B6FA0F600F336BC /* LogIn.xcdatamodeld in Sources */,
 				96234D701B7B812C00CDABC7 /* PositionViewController.swift in Sources */,
 			);
