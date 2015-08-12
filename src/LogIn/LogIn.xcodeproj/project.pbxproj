@@ -14,6 +14,7 @@
 		96142D2C1B6FA0F600F336BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96142D2B1B6FA0F600F336BC /* Images.xcassets */; };
 		96142D2F1B6FA0F600F336BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96142D2D1B6FA0F600F336BC /* LaunchScreen.xib */; };
 		96142D3B1B6FA0F600F336BC /* LogInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96142D3A1B6FA0F600F336BC /* LogInTests.swift */; };
+		96234D701B7B812C00CDABC7 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		96142D341B6FA0F600F336BC /* LogInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96142D391B6FA0F600F336BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96142D3A1B6FA0F600F336BC /* LogInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTests.swift; sourceTree = "<group>"; };
+		96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				96142D211B6FA0F600F336BC /* AppDelegate.swift */,
+				96234D6F1B7B812C00CDABC7 /* PositionViewController.swift */,
 				96142D261B6FA0F600F336BC /* ViewController.swift */,
 				96142D281B6FA0F600F336BC /* Main.storyboard */,
 				96142D2B1B6FA0F600F336BC /* Images.xcassets */,
@@ -218,6 +221,7 @@
 				96142D271B6FA0F600F336BC /* ViewController.swift in Sources */,
 				96142D221B6FA0F600F336BC /* AppDelegate.swift in Sources */,
 				96142D251B6FA0F600F336BC /* LogIn.xcdatamodeld in Sources */,
+				96234D701B7B812C00CDABC7 /* PositionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				96142D401B6FA0F600F336BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96142D411B6FA0F600F336BC /* Build configuration list for PBXNativeTarget "LogInTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				96142D431B6FA0F600F336BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
