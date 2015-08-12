@@ -49,6 +49,23 @@
                                             <segue destination="X6m-80-Lri" kind="modal" id="xES-Md-Vhf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="QTj-rD-84e" style="IBUITableViewCellStyleDefault" id="GOC-KL-akM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GOC-KL-akM" id="FsY-zx-jg9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Opacity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QTj-rD-84e">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GBk-Nb-U1q" kind="push" id="NZD-bf-HTH"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -63,6 +80,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cq-Rb-9EM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="339.5" y="279.5"/>
+        </scene>
+        <!--Opacity View Controller-->
+        <scene sceneID="gQh-X1-uI9">
+            <objects>
+                <viewController id="GBk-Nb-U1q" customClass="OpacityViewController" customModule="LogIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGd-PB-Uwk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dzU-yY-Xaj">
+                                <rect key="frame" x="136" y="166" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.12687135617116829" green="0.19309554558016695" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kpv-XI-Ngs"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="dzU-yY-Xaj" id="OTc-pt-X2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RST-hz-q03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-1116"/>
         </scene>
         <!--Position View Controller-->
         <scene sceneID="e42-JW-7KH">

@@ -1,5 +1,5 @@
 //
-//  PositionViewController.swift
+//  OpacityViewController.swift
 //  LogIn
 //
 //  Created by jason on 15/8/12.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class PositionViewController: UIViewController {
-
-
+class OpacityViewController: UIViewController {
 
     @IBOutlet weak var blueSquare: UIView!
-    @IBOutlet weak var redSquare: UIView!
-    @IBOutlet weak var greenSquare: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +23,11 @@ class PositionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         UIView.animateWithDuration(1, animations: {
-            self.redSquare.center.y = self.view.bounds.height - self.redSquare.center.y
-        })
-
-        UIView.animateWithDuration(1, delay: 0.5, options: nil, animations: {
-            self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
-            }, completion: { _ in
-                UIView.animateWithDuration(1, animations: {
-                    self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
-                    self.blueSquare.center.y = self.view.bounds.height - self.blueSquare.center.y
-                    })
+            self.blueSquare.alpha = 0.2
         })
     }
 
