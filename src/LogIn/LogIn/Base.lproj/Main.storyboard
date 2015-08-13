@@ -83,6 +83,23 @@
                                             <segue destination="0kr-Uk-joG" kind="push" id="Kka-QQ-Eqo"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Ue1-k2-0qh" style="IBUITableViewCellStyleDefault" id="gju-Mo-nL5">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gju-Mo-nL5" id="HHr-OC-eH5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ue1-k2-0qh">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4ig-kJ-YpJ" kind="push" id="JS7-sT-frU"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -121,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RST-hz-q03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="-1116"/>
+            <point key="canvasLocation" x="855.5" y="-1198.5"/>
         </scene>
         <!--Scale View Controller-->
         <scene sceneID="KdY-0x-nVj">
@@ -146,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-P8-D0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="-1166"/>
+            <point key="canvasLocation" x="1280.5" y="-1198.5"/>
         </scene>
         <!--Position View Controller-->
         <scene sceneID="e42-JW-7KH">
@@ -184,6 +201,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTh-Er-hqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855.5" y="-450.5"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="5qb-S4-tKS">
+            <objects>
+                <viewController id="4ig-kJ-YpJ" customClass="ColorViewController" customModule="LogIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGs-h9-uTu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="72Z-KD-OQt">
+                                <rect key="frame" x="115" y="127" width="145" height="189"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jason Ai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDE-3z-cOL">
+                                        <rect key="frame" x="33" y="70" width="79" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18390716551461139" green="0.48020736090446248" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dNt-Rq-cFv"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="72Z-KD-OQt" id="iPL-gi-ms2"/>
+                        <outlet property="name" destination="IDE-3z-cOL" id="cqF-W3-R9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3NX-Yh-3u4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.5" y="-450.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BJt-Tb-3xl">
