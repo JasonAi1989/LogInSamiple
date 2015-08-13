@@ -117,6 +117,23 @@
                                             <segue destination="cNv-0j-ak7" kind="push" id="Ncl-JU-H0F"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="eRZ-ak-1sA" style="IBUITableViewCellStyleDefault" id="pUi-T0-uA4">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pUi-T0-uA4" id="zTE-WH-0bX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Repeat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eRZ-ak-1sA">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aJT-dK-poE" kind="push" id="3T7-eB-02m"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -338,6 +355,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBP-hz-tRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855.5" y="278.5"/>
+        </scene>
+        <!--Repeat View Controller-->
+        <scene sceneID="n7s-bb-eIZ">
+            <objects>
+                <viewController id="aJT-dK-poE" customClass="RepeatViewController" customModule="LogIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ny-eL-980">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Arn-z2-pER">
+                                <rect key="frame" x="16" y="120" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.12687135620000001" green="0.1930955456" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="hfc-GN-Ul7">
+                                <rect key="frame" x="16" y="214" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.20444734050055413" blue="0.25373495647567668" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="eBA-1q-eSs">
+                                <rect key="frame" x="16" y="302" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.1176820476389222" green="1" blue="0.17224692567596211" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wsf-g8-Y42"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="Arn-z2-pER" id="RhX-cO-giE"/>
+                        <outlet property="greenSquare" destination="eBA-1q-eSs" id="ZAk-zd-W2T"/>
+                        <outlet property="redSquare" destination="hfc-GN-Ul7" id="tf2-Yz-jsd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x41-TU-Wd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855.5" y="1039.5"/>
         </scene>
         <!--Rotation View Controller-->
         <scene sceneID="eOC-n4-XDU">
