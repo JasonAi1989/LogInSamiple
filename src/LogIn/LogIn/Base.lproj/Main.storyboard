@@ -100,6 +100,23 @@
                                             <segue destination="4ig-kJ-YpJ" kind="push" id="JS7-sT-frU"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="tCy-iD-Ndh" style="IBUITableViewCellStyleDefault" id="beo-4u-e30">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="beo-4u-e30" id="ZUX-eD-jiF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Rotation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tCy-iD-Ndh">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cNv-0j-ak7" kind="push" id="Ncl-JU-H0F"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -322,6 +339,30 @@
             </objects>
             <point key="canvasLocation" x="855.5" y="278.5"/>
         </scene>
+        <!--Rotation View Controller-->
+        <scene sceneID="eOC-n4-XDU">
+            <objects>
+                <viewController id="cNv-0j-ak7" customClass="RotationViewController" customModule="LogIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LI-P7-bKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="lucky_round" id="flt-NH-tWW">
+                                <rect key="frame" x="75" y="125" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cMp-Ik-oKa"/>
+                    <connections>
+                        <outlet property="round" destination="flt-NH-tWW" id="fXb-xj-1Ka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX8-lm-Yy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.5" y="279.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0XW-Wy-KMX">
             <objects>
@@ -351,6 +392,7 @@
         <image name="Button Background" width="13" height="47"/>
         <image name="Text Field" width="320" height="34"/>
         <image name="background" width="375" height="667"/>
+        <image name="lucky_round" width="341" height="341"/>
         <image name="point" width="6" height="6"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
